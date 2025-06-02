@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script src="formulario.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Formulario de Registro</h1>
+        </div>
+        <div class="formulario">
+            <div class="campo"> 
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required> 
+            </div>
+            <div class="campo">
+                <label for="rut">Rut *</label>
+                <input type="text" name="Rut" id="rut" placeholder="Rut" required> 
+            </div>
+            <div class="campo">
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fecha_nacimientto" id="fecha_nacimiento"> 
+            </div>
+            <div class="campo">
+                <label for="curriculum">Curriculum Vitae *</label>
+                <input type="file" name="curriculum" id="curriculum" required> 
+            </div>
+            <div class="campo">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required> 
+            </div>
+            <div class="campo">
+            <label for="genero">Género</label>
+                <select name="genero" id="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select> 
+            </div>
+            <div class="campo">
+                <label for="contraseña">Contraseña *</label>
+                <input type="password" name="contraseña" id="contraseña" required> 
+            </div>
+            <div class="campo">
+                <label for="repetir_contraseña">Repetir contraseña *</label>
+                <input type="password" name="repetir_contraseña" id="repetir_contraseña" required> 
+            </div>
+            <div class="botones">
+                <button class="boton"  onclick="">Cancelar</button>
+                <button class="boton" onclick="">Guardar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

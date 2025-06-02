@@ -1,0 +1,107 @@
+body{
+    font-family: 'calibri';
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor{
+    background-color: #24303C;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.titulo h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #F8F3E6;
+
+}
+
+.formulario{
+    display: grid;
+    gap: 15px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    columns: #555;
+    color: #F8F3E6;
+    font-family: 'calibri';
+    
+}
+
+input, select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #24303C;
+    border: 1px solid #1f54c5;
+    font-family: 'calibri';
+}
+
+.botones{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 10px;
+    font-family: 'calibri';
+}
+
+.boton{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.boton:first-child{
+    background-color: #B0BEC5;
+    color: #24303C;
+}
+
+.boton:last-child{
+    background-color: #1E88E5;
+    color: #ffffff;
+}
+
+.boton:hover{
+    opacity: 0.7;
+}
+
+#curriculum,
+#fecha_nacimiento,
+#genero,
+#email,
+#nombre,
+#rut,
+#contraseña,
+#repetir_contraseña {
+    color: #B0BEC5;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
